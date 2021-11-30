@@ -1,0 +1,29 @@
+$screen-sm-min: 576px;
+$screen-md-min: 769px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1500px;
+
+:root {
+  /* colors */
+  --clr-very-dark-gray: hsl(0, 0%, 17%);
+  --clr-dark-gray: hsl(0, 0%, 59%);
+  --clr-dark-gray-tr: hsl(0, 0%, 59%, 0.5);
+
+  /* font-families */
+  --ff-rubik: 'Rubik', sans-serif;
+
+  /* font-sizes */
+  --fs-700: 1.6rem;
+  --fs-500: 1.25rem;
+  --fs-400: 0.65rem;
+
+  /* app*/
+  --form-height: 57px;
+  --form-radius: 13px;
+  @media (min-width: $screen-lg-min) {
+    --fs-700: 1.95rem;
+    --fs-500: 1.65rem;
+    --fs-400: 0.8rem;
+  }
+}

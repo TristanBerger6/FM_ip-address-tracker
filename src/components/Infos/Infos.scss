@@ -1,0 +1,77 @@
+@import '../../sass/variables';
+
+.infos {
+  --infos-height: 18rem;
+  margin-inline: auto;
+  width: min(calc(var(--form-height) + min(72vw, 50rem)), 25rem);
+  height: var(--infos-height);
+  background: white;
+  border-radius: 13px;
+  position: relative;
+  transform: translateY(50%);
+  margin-top: calc(-0.5 * var(--infos-height));
+  box-shadow: 0px 10px 7px var(--clr-dark-gray-tr);
+
+  grid-template-rows: repeat(4, 1fr);
+  --gap: 0.5rem;
+  padding-block: 1rem;
+  z-index: 999;
+
+  &__item {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    span {
+      text-transform: uppercase;
+      color: var(--clr-dark-gray);
+      font-weight: 700;
+      font-size: var(--fs-400);
+      letter-spacing: 1.75px;
+    }
+    p {
+      font-weight: 500;
+      font-size: var(--fs-500);
+      padding-inline: 0.5rem;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    width: max(calc(var(--form-height) + min(72vw, 50rem)), 90vw);
+    max-width: 69rem;
+    --infos-height: 10rem;
+    text-align: left;
+    &__item {
+      min-width: 25%;
+      align-self: start;
+      margin-top: 1rem;
+      align-items: start;
+      justify-content: center;
+      padding-inline: 1.6rem;
+      p {
+        margin-top: 0.5rem;
+        line-height: 1.1em;
+        padding-inline: 0;
+      }
+      &:nth-child(1)::before,
+      &:nth-child(2)::before,
+      &:nth-child(3)::before {
+        content: '';
+        position: absolute;
+        top: calc(0.25 * var(--infos-height));
+        left: 25%;
+        width: 1px;
+        height: calc(0.5 * var(--infos-height));
+        background-color: var(--clr-dark-gray-tr);
+      }
+      &:nth-child(2)::before {
+        left: 50%;
+      }
+      &:nth-child(3)::before {
+        left: 75%;
+      }
+    }
+  }
+}

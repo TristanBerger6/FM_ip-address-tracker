@@ -1,0 +1,23 @@
+.form {
+  input {
+    height: var(--form-height);
+    width: min(72vw, 31rem);
+    border: none;
+    border-top-left-radius: var(--form-radius);
+    border-bottom-left-radius: var(--form-radius);
+    padding-left: 20px;
+    cursor: pointer;
+  }
+  button {
+    background: black;
+    border: none;
+    height: var(--form-height);
+    width: var(--form-height);
+    border-top-right-radius: var(--form-radius);
+    border-bottom-right-radius: var(--form-radius);
+    cursor: pointer;
+    &:hover {
+      background: var(--clr-very-dark-gray);
+    }
+  }
+}
