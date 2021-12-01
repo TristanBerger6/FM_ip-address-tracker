@@ -3,7 +3,8 @@
 .infos {
   --infos-height: 18rem;
   margin-inline: auto;
-  width: min(calc(var(--form-height) + min(72vw, 50rem)), 25rem);
+  --tmp1: calc(min(72vw, 50rem) + var(--form-height));
+  width: min(var(--tmp1), 25rem);
   height: var(--infos-height);
   background: white;
   border-radius: 13px;
@@ -39,7 +40,8 @@
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-evenly;
-    width: max(calc(var(--form-height) + min(72vw, 50rem)), 90vw);
+    --tmp2: calc(min(72vw, 50rem) + var(--form-height));
+    width: max(var(--tmp2), 90vw);
     max-width: 69rem;
     --infos-height: 10rem;
     text-align: left;
