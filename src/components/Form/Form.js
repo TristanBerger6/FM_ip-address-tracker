@@ -10,8 +10,11 @@ function Form(props) {
 
   return (
     <form className="form" onSubmit={props.onSubmit}>
-      <label className="sr-only"> Search for any IP adress or domain </label>
+      <label className="sr-only" for="IpAddress-Domain">
+        Search for any IP adress or domain
+      </label>
       <input
+        id="ipAddress-Domain"
         onChange={handleChange}
         value={props.value}
         type="text"
