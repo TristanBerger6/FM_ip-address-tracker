@@ -5,7 +5,9 @@ import Home from './components/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <main>
+      <Home />
+    </main>
   </React.StrictMode>,
   document.getElementById('root')
 );
