@@ -1,6 +1,6 @@
 # Frontend Mentor - IP address tracker solution
 
-This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). 
 
 ## Table of contents
 
@@ -25,7 +25,9 @@ Users should be able to:
 
 ### Built with
 
-This project was built using React / SASS along with CSS custom properties.
+This project was built using React / SASS along with CSS custom properties. It uses Ip Geolocation API by IPify, and LeafletJS to generate the map.
+
+![screenshot](./public/design/desktop-design.jpg)
 
 ### Links
 

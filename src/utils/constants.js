@@ -1,4 +1,4 @@
-export const API_KEY = 'at_Py1LEZfTizACSCjPb5k0nZSuUkmi6';
+export const API_KEY = 'at_qDsQuzPFWx7NjSv2kVW3LKBHe5Z1W';
 export const defaultData = {
   ip: '...',
   location: {
